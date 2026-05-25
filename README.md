@@ -2,12 +2,6 @@
 <p align="center"><strong>End-to-End Healthcare Analytics Project</strong></p>
 <p align="center">Python • SQL • Excel • Power BI • DAX</p>
 
-<p align="center">
-  <img src="https://img.shields.io/badge/Python-Analytics-blue?style=for-the-badge&logo=python" alt="Python Badge" />
-  <img src="https://img.shields.io/badge/SQL-Operational_Analytics-black?style=for-the-badge&logo=mysql" alt="SQL Badge" />
-  <img src="https://img.shields.io/badge/Excel-Dashboarding-green?style=for-the-badge&logo=microsoft-excel" alt="Excel Badge" />
-  <img src="https://img.shields.io/badge/Power_BI-DAX-yellow?style=for-the-badge&logo=powerbi" alt="Power BI Badge" />
-</p>
 
 <p align="center">
   <em>Built to demonstrate healthcare data engineering, analytics, dashboarding, and executive reporting across the full workflow.</em>
