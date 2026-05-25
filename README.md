@@ -273,22 +273,6 @@ A dedicated **_Measure** table was used to store DAX calculations in an organize
 
 ---
 
-## 📁 Repository Structure
-
-```text
-HospitalFlow360/
-├── python/
-├── sql/
-├── excel/
-├── powerbi/
-├── data/
-├── docs/
-├── screenshots/
-└── README.md
-```
-
----
-
 ## 📦 Files Included
 
 * Python notebook for synthetic data generation and preparation
