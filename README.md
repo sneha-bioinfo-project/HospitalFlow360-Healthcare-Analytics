@@ -1,127 +1,104 @@
-# HospitalFlow360
-
-## End-to-End Healthcare Analytics Project
+<h1 align="center">🏥 HospitalFlow360</h1>
+<p align="center"><strong>End-to-End Healthcare Analytics Project</strong></p>
+<p align="center">Python • SQL • Excel • Power BI • DAX</p>
 
 <p align="center">
-  <img src="screenshots/powerbi_dashboard.png" alt="HospitalFlow360 dashboard preview" width="950">
+  <img src="https://img.shields.io/badge/Python-Analytics-blue?style=for-the-badge&logo=python" alt="Python Badge" />
+  <img src="https://img.shields.io/badge/SQL-Operational_Analytics-black?style=for-the-badge&logo=mysql" alt="SQL Badge" />
+  <img src="https://img.shields.io/badge/Excel-Dashboarding-green?style=for-the-badge&logo=microsoft-excel" alt="Excel Badge" />
+  <img src="https://img.shields.io/badge/Power_BI-DAX-yellow?style=for-the-badge&logo=powerbi" alt="Power BI Badge" />
 </p>
 
 <p align="center">
-  <b>Python • SQL • Excel • Power BI • DAX • Healthcare Analytics</b>
+  <em>Built to demonstrate healthcare data engineering, analytics, dashboarding, and executive reporting across the full workflow.</em>
 </p>
 
 ---
 
-## Project Overview
+## 📌 Project Snapshot
 
-**HospitalFlow360** is an end-to-end healthcare analytics project built with **Python, SQL, Excel, and Power BI**. It simulates hospital operations through synthetic data and analyzes core business areas such as **appointments, admissions, billing, no-shows, readmissions, department performance, and revenue leakage**.
-
-The project demonstrates a complete analytics workflow:
-
-**Data Generation → Data Cleaning → SQL Analysis → Excel Dashboarding → Power BI Modeling → Executive Reporting**
-
----
-
-## Business Objectives
-
-* Create a realistic synthetic healthcare dataset for analytics practice and portfolio presentation
-* Analyze appointment behavior, no-show patterns, and department performance
-* Track admissions, readmissions, and length of stay
-* Identify revenue leakage through billing and payment logic
-* Build interactive dashboards in Excel and Power BI
-* Apply data modeling, KPI development, and business intelligence techniques
+| Metric         | Details                                                          |
+| -------------- | ---------------------------------------------------------------- |
+| Domain         | Healthcare Analytics                                             |
+| Core Tools     | Python, SQL, Excel, Power BI                                     |
+| Main Focus     | Appointments, Admissions, Billing, Readmissions, Revenue Leakage |
+| Modeling Style | Star Schema in Power BI                                          |
+| BI Outputs     | Excel Dashboard + Power BI Dashboard                             |
+| Data Type      | Synthetic hospital operations data                               |
 
 ---
 
-## Tech Stack
-
-| Category        | Tools & Technologies |
-| --------------- | -------------------- |
-| Programming     | Python               |
-| Data Analysis   | pandas, NumPy        |
-| Data Generation | Faker                |
-| Visualization   | Matplotlib, Seaborn  |
-| Profiling       | ydata-profiling      |
-| Querying        | SQL                  |
-| Dashboarding    | Excel, Power BI      |
-| BI Modeling     | DAX, Star Schema     |
-| Automation      | VBA Macros           |
-
----
-
-## Dataset Overview
-
-The project includes the following core tables:
-
-| Table        | Purpose                                    |
-| ------------ | ------------------------------------------ |
-| Patients     | Patient demographics and insurance details |
-| Doctors      | Doctor details and department mapping      |
-| Departments  | Hospital department structure              |
-| Calendar     | Date dimension for reporting               |
-| Appointments | Appointment transactions                   |
-| Admissions   | Admission records                          |
-| Billing      | Financial and payment records              |
-
-### Generated Scale
-
-* **5,000** patient records
-* **40** doctor records
-* **8** department records
-* **3 years** of calendar dates
-* **12,000** appointment records
-* Admission and billing records linked for operational analysis
-
----
-
-## Repository Structure
+## 🔄 Analytics Workflow
 
 ```text
-HospitalFlow360/
-├── python/
-│   ├── HospitalFlow360_DataGeneration.ipynb
-│   ├── appointments_profile_report.html
-│   └── requirements.txt
-├── sql/
-│   ├── data_quality_analysis.sql
-│   ├── department_performance_analysis.sql
-│   ├── no_show_analysis.sql
-│   ├── readmission_analysis.sql
-│   ├── revenue_leakage_analysis.sql
-│   └── doctor_efficiency_analysis.sql
-├── excel/
-│   └── HospitalFlow360_ExcelDashboard.xlsx
-├── powerbi/
-│   └── HospitalFlow360.pbix
-├── data/
-│   ├── raw/
-│   └── cleaned/
-├── docs/
-│   └── data_dictionary.csv
-├── screenshots/
-│   ├── excel_dashboard.png
-│   ├── powerbi_dashboard.png
-│   └── data_model.png
-└── README.md
+Python Data Generation
+        ↓
+Data Cleaning & Validation
+        ↓
+SQL Operational Analysis
+        ↓
+Excel Dashboarding & Automation
+        ↓
+Power BI Modeling & DAX
+        ↓
+Executive KPI Reporting
 ```
 
 ---
 
-## Python: Data Engineering & Preparation
+## 🧠 What This Project Covers
 
-Python was used to build the foundation of the project by generating, validating, and preparing the healthcare datasets.
+HospitalFlow360 simulates hospital operations and analyzes the performance of a healthcare system through structured datasets and BI outputs.
+
+### Core analytical areas
+
+* Appointment behavior
+* No-show patterns
+* Admissions and readmissions
+* Billing and payment logic
+* Revenue leakage
+* Department performance
+* Doctor efficiency
+
+---
+
+## 📊 Dataset Overview
+
+| Table        | Purpose                                    |
+| ------------ | ------------------------------------------ |
+| Patients     | Patient demographics and insurance details |
+| Doctors      | Doctor information and department mapping  |
+| Departments  | Hospital department structure              |
+| Calendar     | Date dimension for analysis                |
+| Appointments | Appointment transactions                   |
+| Admissions   | Admission records                          |
+| Billing      | Financial and payment records              |
+
+### Generated scale
+
+* 5,000 patient records
+* 40 doctor records
+* 8 departments
+* 3 years of calendar dates
+* 12,000 appointment records
+* Admissions and billing linked for downstream analysis
+
+---
+
+## 🐍 Python: Data Engineering & Preparation
+
+Python was used to build the foundation of the project by generating and preparing the hospital datasets.
 
 ### What was done
 
-* Generated synthetic healthcare tables
+* Created synthetic healthcare tables
 * Linked patients, doctors, departments, appointments, admissions, and billing records
-* Created derived fields for analytics
-* Performed data cleaning and validation
-* Removed duplicates
+* Engineered derived fields for analysis
+* Performed duplicate removal and data validation
 * Standardized text fields
 * Exported raw and cleaned datasets
-* Built a data dictionary
-* Created a profiling report for exploratory validation
+* Created a data dictionary
+* Generated a profiling report for exploratory validation
 
 ### Features engineered
 
@@ -148,9 +125,9 @@ Python was used to build the foundation of the project by generating, validating
 
 ---
 
-## SQL: Operational Analytics
+## 🗄️ SQL: Operational Analytics
 
-SQL was used to evaluate healthcare operations and derive business insights from the structured dataset.
+SQL was used to evaluate healthcare operations and extract business insights from the structured datasets.
 
 ### Analyses performed
 
@@ -179,7 +156,7 @@ SQL was used to evaluate healthcare operations and derive business insights from
 
 ---
 
-## Excel: Dashboard & Automation
+## 📈 Excel: Dashboard & Automation
 
 Excel was used to create an interactive healthcare operations dashboard.
 
@@ -207,13 +184,9 @@ Excel was used to create an interactive healthcare operations dashboard.
 * Revenue leakage tracking
 * Operational KPI reporting
 
-<p align="center">
-  <img src="screenshots/excel_dashboard.png" alt="Excel dashboard preview" width="950">
-</p>
-
 ---
 
-## Power BI: Modeling & KPI Reporting
+## 📊 Power BI: Modeling & KPI Reporting
 
 Power BI was used to structure the project into a clean analytical model and build executive-style reporting.
 
@@ -253,25 +226,23 @@ A dedicated **_Measure** table was used to store DAX calculations in an organize
 * Revenue and appointment performance
 * Time-intelligence calculations
 
-<p align="center">
-  <img src="screenshots/data_model.png" alt="Power BI data model preview" width="950">
-</p>
+---
+
+## 🔍 Key Analyses Covered
+
+| Analysis                     | Purpose                                       |
+| ---------------------------- | --------------------------------------------- |
+| Appointment No-show Patterns | Understand missed appointment behavior        |
+| Readmission Behavior         | Track repeat admissions within 30 days        |
+| Revenue Leakage              | Estimate financial loss from operational gaps |
+| Department Performance       | Compare workload across departments           |
+| Doctor Efficiency            | Analyze average length of stay                |
+| Billing & Claim Behavior     | Review payment and insurance outcomes         |
+| Patient Segmentation         | Study demographic and insurance patterns      |
 
 ---
 
-## Key Analyses Covered
-
-* Appointment no-show patterns
-* Readmission behavior
-* Revenue leakage from operational gaps
-* Department performance differences
-* Doctor efficiency by length of stay
-* Billing and claim behavior
-* Patient demographic segmentation
-
----
-
-## Skills Demonstrated
+## 🧰 Skills Demonstrated
 
 ### Data Engineering
 
@@ -308,29 +279,23 @@ A dedicated **_Measure** table was used to store DAX calculations in an organize
 
 ---
 
-## Screenshots
+## 📁 Repository Structure
 
-### Excel Dashboard
-
-<p align="center">
-  <img src="screenshots/excel_dashboard.png" alt="Excel dashboard screenshot" width="950">
-</p>
-
-### Power BI Dashboard
-
-<p align="center">
-  <img src="screenshots/powerbi_dashboard.png" alt="Power BI dashboard screenshot" width="950">
-</p>
-
-### Data Model
-
-<p align="center">
-  <img src="screenshots/data_model.png" alt="Power BI data model screenshot" width="950">
-</p>
+```text
+HospitalFlow360/
+├── python/
+├── sql/
+├── excel/
+├── powerbi/
+├── data/
+├── docs/
+├── screenshots/
+└── README.md
+```
 
 ---
 
-## Files Included
+## 📦 Files Included
 
 * Python notebook for synthetic data generation and preparation
 * SQL scripts for healthcare analytics
@@ -342,15 +307,15 @@ A dedicated **_Measure** table was used to store DAX calculations in an organize
 
 ---
 
-## Notes
+## 📝 Notes
 
 * This project uses **synthetic healthcare data** created for portfolio and learning purposes.
-* No real patient data is included.
+* No real patient information is included.
 * The project demonstrates an end-to-end analytics workflow across multiple tools.
 
 ---
 
-## Contact
+## 👤 Author
 
 **Sneha S**
 
