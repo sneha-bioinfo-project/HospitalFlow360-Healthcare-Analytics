@@ -295,6 +295,6 @@ A dedicated **_Measure** table was used to store DAX calculations in an organize
 
 ## 👤 Author
 
-**Sneha S**
+**Sneha Suresh**
 
 Healthcare Analytics | Data Analytics | Business Intelligence
